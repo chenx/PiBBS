@@ -22,7 +22,7 @@ It was picked up again in Summer 2014, and more work were done.
 
 License
 =======
-Released under Apache/MIT/BSD/GPL v2 license.
+Released under Apache/MIT/BSD/GPLv2 license.
 
 Author
 ======
