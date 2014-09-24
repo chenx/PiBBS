@@ -1,4 +1,4 @@
-PiBB
+PiBBS
 =====
 
 A web framework, and Forum/BBS web application.
