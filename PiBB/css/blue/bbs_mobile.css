@@ -1,0 +1,400 @@
+
+table {
+    text-align: left; /* Opera use center-align by default. */
+}
+
+/* index.php */
+
+table.bbs_box_index {
+    width: 100%; /* 960px; */
+    border: 0px solid black;
+    padding: 0px;
+    text-align: center;
+    border-spacing: 0px;
+}
+
+table.bbs_forum_list {
+    /*width: 700px;*/
+    width: 100%;
+    border: 0px solid black;
+    padding: 0px;
+    text-align: center;
+}
+
+table.bbs_forum_list td {
+    border-bottom: 1px solid #eee;
+}
+
+table.bbs_forum_list tr:nth-child(odd) {
+    height: 25px;
+}
+
+table.bbs_forum_list tr:nth-child(even) {
+    height: 25px;
+}
+
+table.bbs_forum_list tr:nth-child(1) {
+    background-color: #ccccff;
+    padding: 5px;
+}
+
+table.bbs_forum_list tr:hover {
+    background-color: #eeeeff;
+}
+
+td.bbs_forum_list_group {
+    text-align: left;
+    font-weight: bold;
+    background-color: #e9eeff; /*#D0F5A9;*/ /*#9FF781*/
+    padding: 5px;
+}
+
+/* For each forum */
+
+table.bbs_box {
+    width: 100%; /*850px;*/
+    border: 0px solid black;
+    padding: 0px;
+    text-align: center;
+    border-spacing: 0px;
+}
+
+
+/* These three are for the list of boards. */
+td.bbs_board_list_left {
+    display: none;
+}
+
+td.bbs_board_list_mid {
+    width: 100%;
+}
+
+td.bbs_board_list_right {
+    display: none;
+}
+
+
+/* Inside bbs_box, left side of bbs_list. For extension. */
+td.bbs_list_left {
+    /*
+    width: 0px;
+    border: 0px solid black;
+    vertical-align: top;
+    */
+    /*background: url('../image/tree50R.jpg') no-repeat -5px 1px;*/
+    display: none:
+}
+
+td.bbs_list_mid {
+    width: 100%;
+}
+
+/* Inside bbs_box, right side of bbs_list. For extension. */
+td.bbs_list_right {
+    /*
+    width: 50px;
+    border: 0px solid black;
+    vertical-align: top;
+    background: url('../../image/tree50R.jpg') no-repeat 5px 1px;
+    */
+    display:none; 
+}
+
+
+/* forum.php page */
+table.bbs_list_breadcrumb {
+    width: 100%; /*850px;*/
+    border: 0px solid black;
+}
+
+table.bbs_list_head {
+    width: 100%;
+    border: 0px solid black;
+    background-color: #eeffff;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+table.bbs_list_head tr {
+    height: 25px;
+}
+
+table.bbs_list_head td {
+    vertical-align: middle;
+}
+
+td.bbs_list_nav {
+    text-align: left;
+}
+
+table.bbs_list {
+    width: 100%;
+    border-spacing: 1px;
+}
+
+/* for header: field names */
+table.bbs_list tr:nth-child(odd) {
+    text-align: left;
+    background-color: #eeeeee;
+}
+
+table.bbs_list tr:nth-child(even) {
+    text-align: left;
+}
+
+/* order matters: this goes after nth-child(1), so overwrites it. */
+table.bbs_list tr:nth-child(1) {
+    background-color: #ccccff;
+}
+
+table.bbs_list td {
+    height: 25px;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+table.bbs_list tr:hover {
+    background-color: #eeeeff;
+}
+
+table.bbs_list td:nth-child(1) { width: 10px; }
+table.bbs_list td:nth-child(2) { width: 10px; text-align: center; }
+/* 3rd column: title. Use float:left and overflow:hidden to hide part of title too long. */
+table.bbs_list td:nth-child(3) { /*width: 370px;*/ float: left; overflow: hidden; white-space: wrap; line-height: 25px; }
+table.bbs_list td:nth-child(4) { width: 70px; white-space: nowrap; text-align: right; } /* post date */
+table.bbs_list td:nth-child(5) { width: 60px; white-space: nowrap; } /* author */
+table.bbs_list td:nth-child(6) { width: 30px; white-space: nowrap; text-align: center; } /* click  */
+table.bbs_list td:nth-child(7) { width: 30px; white-space: nowrap; text-align: center; } /* reply  */
+table.bbs_list td:nth-child(8) { width: 70px; white-space: nowrap; text-align: right; }  /* last reply */
+table.bbs_list td:nth-child(9) { width: 60px; white-space: nowrap; } /* author */
+/* last columns: for possible management functions. */
+table.bbs_list td:nth-child(10) { width: 10px;  white-space: nowrap; text-align: center; }
+table.bbs_list td:nth-child(11) { width: 10px;  white-space: nowrap; text-align: center; }
+table.bbs_list td:nth-child(12) { width: 10px;  white-space: nowrap; text-align: center; }
+table.bbs_list td:nth-child(13) { width: 10px;  white-space: nowrap; text-align: center; }
+table.bbs_list td:nth-child(14) { width: 10px;  white-space: nowrap; text-align: center; }
+table.bbs_list td:nth-child(15) { width: 10px;  white-space: nowrap; text-align: center; }
+
+/* new.php, view.php reply, reply.php, edit.php */
+/* level 1 table */
+
+table.bbs_post_head {
+    width: 100%;
+    border: 0px solid black;
+    text-align: center;
+    background-color: #eeffff;
+}
+
+table.bbs_post_head tr:nth-child(1) {
+    height: 25px;
+}
+
+/* level 2 table */
+
+table.bbs_post {
+    width: 100%;
+    border: 0px solid black;
+    text-align: left;
+}
+
+table.bbs_post tr:nth-child(odd) {
+    text-align: left;
+    background-color: #eeeeee;
+}
+
+table.bbs_post tr:nth-child(even) {
+    text-align: left;
+}
+
+table.bbs_post td:first-child {
+    width: 100px;
+    height: 25px;
+    vertical-align: middle;
+    white-space:nowrap;
+}
+
+table.bbs_post td:nth-child(2) {
+    /*width: 700px;*/
+    /*background-color: green;*/
+    width: 100%;
+}
+
+table.bbs_post td {
+    padding-left: 5px;
+}
+
+/* view.php view */
+
+table.bbs_post_view {
+    width: 100%;
+    border: 0px solid black;
+    padding: 0px;
+}
+
+td.bbs_post_view_left {
+    /*
+    vertical-align: top;
+    text-align: center;
+    width: 100px;
+    background-color: #eeeeff;
+    padding-left: 3px;
+    padding-top: 7px;
+    */
+    display: none;
+}
+
+td.bbs_post_view_right {
+
+}
+
+table.bbs_post_view_content {
+    width: 100%;
+    border: 0px solid black;
+    border-spacing: 0px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+tr.bbs_post_view_content_head {
+    background-color: #eeeeff;
+    height: 25px;
+}
+
+/* view.php manage */
+
+table.bbs_post_manage {
+    /*width: 100%;*/
+    border: 0px solid black;
+    padding: 0px;
+}
+
+table.bbs_post_manage td {
+    text-align: center;
+}
+
+tr.bbs_post_manage_head {
+    height: 25px;
+    background-color: #ffcc33;
+}
+
+td.bbs_post_manage_head {
+    height: 25px;
+    background-color: #ffcc33;
+}
+
+a.bbs_manage {
+    text-decoration: none;
+    color: #ffcc33;
+}
+
+a.bbs_manage:hover {
+    color: blue;
+}
+
+/* user.php */
+
+table.bbs_user {
+    width: 90%; 
+    border: 0px solid black;
+    /*padding-left: 15px;*/
+    text-align: left;   
+}
+
+table.bbs_user tr {
+    height: 25px;
+}
+
+table.bbs_user tr:nth-child(odd) {
+    background: #eeeeee;
+}
+
+table.bbs_user tr:hover {
+    background-color: #eeeeff;
+}
+
+table.bbs_user td:nth-child(1) {
+    width: 100px; /* 150px; */
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: right;
+}
+
+table.bbs_user td:nth-child(2) {
+    padding-left: 10px;
+    text-align: left;
+}
+
+
+/* message fields */
+
+input.bbs_title {
+    width: 95%; /* 800px; */
+}
+
+textarea.bbs_body {
+    width: 97%; /* 800px; */
+    height: 280px;
+    resize: none;
+}
+
+input.bbs_keywords {
+    width: 95%; /*800px; */
+}
+
+
+/* Wrap word. http://kenneth.io/blog/2012/03/04/word-wrapping-hypernation-using-css/ */
+pre.bbs {
+    /*display: inline;*/
+    white-space: pre-wrap;       /* Wrap text as needed. CSS 3. */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+, Non standard for webkit */
+
+ -ms-word-break: break-all;
+     word-break: break-all;
+
+-webkit-hyphens: auto;
+   -moz-hyphens: auto;
+    -ms-hyphens: auto;
+        hyphens: auto;
+}
+
+/* buttons */
+
+.btn_bbs {
+    width: 100px;
+}
+
+.btn_bbs:hover {
+    /*color: green;*/
+    font-weight: bold;
+}
+
+div.bbs_buttons {
+    text-align: center;
+}
+
+div.code {
+    background-color: #eeffee; 
+    border: solid 1px #339033;
+    width:99%;
+
+/* 
+  // center the div itself.
+  width: 600px ;
+  margin-left: auto ;
+  margin-right: auto ;
+*/
+}
+
+textarea.code {
+    background-color: #eeffee; 
+    border: solid 1px #339033;
+    width: 99%;
+}
+
+input.searchBox {
+    width: 100%;
+}
+

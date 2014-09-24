@@ -1,0 +1,47 @@
+/* css for menu */
+
+ul.menu {list-style:none; margin:0; padding:0}
+ul.menu * {margin:0; padding:0}
+ul.menu a {display:block; color: #ccc /* #00a3dd*/; text-decoration:none}
+ul.menu a:hover{color:#fff; text-decoration:none; /*background-color: #56a3dd;*/ }
+ul.menu li {position:relative; float:right; margin-right:2px; text-align: right;}
+ul.menu ul {position:absolute; top:28px; /*vertical pos to top menu*/ right:0; background-color: #6454FB; /*#4A8CF8; For IE*/ background: rgba(100,84,251,0.9); /*rgba(74,140,248,0.9);*/ display:none; list-style:none; }
+ul.menu ul li {position:relative; border-bottom:1px solid #aac; border-top:none; width:130px; margin:0}
+ul.menu ul li a {display:block; padding:3px 7px 5px; }
+ul.menu ul li a:hover {background-color: #4A8CF8; /*#56a3dd; #AACCFF*/ }
+ul.menu ul ul {right:130px; top:1px/*vertical position of submenu vs parent menu*/}
+ul.menu .menulink { border-right:1px solid #aaa; padding:4px 11px 4px; font-weight:bold; }
+ul.menu .menulink:hover, ul.menu .menuhover {/*background:url(bg.gif)*/}
+/* ul.menu .sub {background:#66b3ff 168px 8px no-repeat}*/
+/* ul.menu .topline {border-top:1px solid #aac }*/
+ul.menu ul li.topline {border-top:1px solid #aac}
+
+/* use wider size. */
+ul.menu ul.menu2 li {position:relative; border-bottom:1px solid #aac; border-top:none; width:180px; margin:0}
+ul.menu ul.menu2 ul {right:180px; top:1px; /*vertical position of submenu vs parent menu*/}
+ul.menu ul.menu2 li.topline {border-top:1px solid #aac}
+
+/* use different text color. */
+ul.menu .menulink2 { border-right:1px solid #eee; padding:6px 11px 5px; font-weight:bold; color: orange; }
+
+div#menuDIV {
+    height: 25px; 
+    font: normal 14px /*Trebuchet MS*/;
+    font-weight: bold;
+    vertical-align: middle;
+    align: right;
+}
+
+#hdrBar2 {
+    font-size: 14px;
+    font-weight: bold;
+    color: #ddd /*#0066CC*/ ;
+    text-shadow: 0px 1px #003333;
+    background-color: #4A8CF8 /* #6454FB; #5341FA; #56a3dd; #AACCFF*/;
+    width: 100%;
+    border-bottom: solid 1px #666699;
+}
+
+#hdrBar2 tr td {
+    border: 0px solid; black;
+}
