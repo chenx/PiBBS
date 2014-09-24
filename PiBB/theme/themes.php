@@ -17,7 +17,7 @@ $PAGE_KEYWORDS = "CareerAssist, Forum";
 $PAGE_TITLE = "CareerAssist Forum";
 
 $homepage_news = "<font color='red'>News: <a href='../imail/' style='color:blue;'>Mailbox</a> is online</font>";
-//$homepage_news = ""; // later will get news from database.
+$homepage_news = ""; // later will get news from database.
 if ($homepage_news != "") $homepage_news = "<span class='homepage_note'>$homepage_news</span>";
 
 // desktop div can show only on desktop, i.e., non-mobile platforms.
