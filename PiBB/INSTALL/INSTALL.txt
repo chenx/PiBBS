@@ -8,7 +8,7 @@
 - Update /conf/conf.php if want to change any default setting.
 - Visit the web directory, log in with default account: admin/password
 - Update admin's password.
-- Remove the /INSTALL folder, or save it at another location outside web root.
+- For security, remove the /INSTALL folder, or move it outside web root.
 
 
 == Database Installation ==
@@ -20,7 +20,7 @@ In console, change working directory to /INSTALL/.
    - enter mysql: mysql -u root -p
    - create database: source makedb.sql;
 
-   Alternatively, you can use phpMyAdmin or other web interface provided by hosting 
+   Alternatively, you can use phpMyAdmin or other web interface tools provided by hosting 
    service to create the database.
 
 2) Load data:
@@ -29,10 +29,6 @@ In console, change working directory to /INSTALL/.
      source load_data.sql;
 
    You can also use phpMyAdmin for this purpose.
-
-Caution: 
-   When run makedb.sql, make sure the current database is correct, otherwise it may remove
-   existing tables from another database which happens to be the current database.
 
 
 9/23/2014
