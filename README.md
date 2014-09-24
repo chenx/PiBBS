@@ -5,14 +5,14 @@ A web framework, and Forum/BBS web application.
 
 Features include:
 
- - Provides a web framework for sign up, sign in/out, user profile management.
- - Provides a forum/bbs.
- - Allows fine control of permissions of board and articles.
+ - Provide a web framework for sign up, sign in/out, user profile management.
+ - Provide a forum/bbs.
+ - Allow fine control of permissions of board and articles:
  - Provide an internal mailbox. 
- - Allows sending external emails and internal emails.
+ - Allow sending external emails and internal emails.
  - Interface works well on desktop, ipad, and mobile devices.
- - Allows creation of new themes, mostly for changing files in /theme and /css.
- - Allows customizable settings, in /conf/conf.php. 
+ - Allow creation of new themes, mostly for changing files in /theme and /css.
+ - Allow customizable settings, in /conf/conf.php. 
  
 History
 ======
