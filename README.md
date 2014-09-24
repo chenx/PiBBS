@@ -7,7 +7,7 @@ Features include:
 
  - Provide a web framework for sign up, sign in/out, user profile management.
  - Provide a forum/bbs.
- - Allow fine control of permissions of board and articles:
+ - Allow fine control of permissions of board and articles.
  - Provide an internal mailbox. 
  - Allow sending external emails and internal emails.
  - Interface works well on desktop, ipad, and mobile devices.
