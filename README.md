@@ -1,9 +1,9 @@
-xcbbs
+PiBB
 =====
 
-A Forum/BBS web application
+A web framework, and Forum/BBS web application.
 
 
 License
 =======
-Released under GPL v2 license.
+Released under Apache/MIT/BSD/GPL v2 license.
