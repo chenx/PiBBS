@@ -11,7 +11,7 @@ Features include:
  - Provide an internal mailbox. 
  - Allow sending external emails and internal emails.
  - Interface works well on desktop, ipad, and mobile devices.
- - Allow creation of new themes, mostly for changing files in /theme and /css.
+ - Allow creation of new themes, mostly by changing files in /theme and /css.
  - Allow customizable settings, in /conf/conf.php. 
  
 History
