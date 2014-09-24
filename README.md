@@ -11,12 +11,14 @@ Features include:
  - Provide an internal mailbox. 
  - Allows sending external emails and internal emails.
  - Interface works well on desktop, ipad, and mobile devices.
-  
+ - Allows creation of new themes, mostly for changing files in /theme and /css.
+ - Allows customizable settings, in /conf/conf.php. 
+ 
 History
 ======
 
 Development first started in Summer 2013, and stopped for a while. 
-It was picked up again and more work were done in Summer 2014.
+It was picked up again in Summer 2014, and more work were done.
 
 License
 =======
