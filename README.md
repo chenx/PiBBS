@@ -24,6 +24,10 @@ History
 Development initiated in Summer 2013 as a forum for <a href="http://homecox.com">homecox.com</a>. 
 It stopped for a while, and was picked up again in Summer 2014.
 
+License
+-----
+Released under Apache/MIT/BSD/GPLv2 license.
+
 User Documentation
 -----
 (coming soon)
@@ -40,9 +44,6 @@ To-do
 -----
 (coming soon)
 
-License
------
-Released under Apache/MIT/BSD/GPLv2 license.
 
 Author
 -----
