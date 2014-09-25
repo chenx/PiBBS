@@ -26,15 +26,19 @@ It stopped for a while, and was picked up again in Summer 2014.
 
 User Documentation
 -----
+(coming soon)
 
 System Administrator Documentation
 -----
+(coming soon)
 
 Developer Documentation
 -----
+(coming soon)
 
 To-do
 -----
+(coming soon)
 
 License
 -----
