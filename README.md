@@ -1,7 +1,7 @@
 PiBBS
 =====
 
-A web framework, and Forum/BBS web application.
+A light-weighted web framework, and Forum/BBS web application. Easy to deploy and extend.
 
 Features include:
 
