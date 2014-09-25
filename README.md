@@ -1,6 +1,9 @@
 PiBBS
 =====
 
+About
+-----
+
 A web framework, and Forum/BBS web application. It is light-weighted, easy to deploy and extend.
 
 Features include:
@@ -16,15 +19,27 @@ Features include:
  - Allow English or Chinese version. Easy to extend to other languages.
  
 History
-======
+-----
 
 Development initiated in Summer 2013 as a forum for <a href="http://homecox.com">homecox.com</a>. 
 It stopped for a while, and was picked up again in Summer 2014.
 
+User Documentation
+-----
+
+System Administrator Documentation
+-----
+
+Developer Documentation
+-----
+
+To-do
+-----
+
 License
-=======
+-----
 Released under Apache/MIT/BSD/GPLv2 license.
 
 Author
-======
+-----
 X. Chen Copyright @ 2013-2014
