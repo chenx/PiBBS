@@ -1,4 +1,4 @@
 Order Deny,Allow
 #Deny from all
-Allow from 66.162.254.21
-Allow from 128.171.2.126
+#Allow from 128.1.1.0
+Allow from all
