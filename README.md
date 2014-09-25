@@ -40,7 +40,7 @@ Developer Documentation
 -----
 (coming soon)
 
-To-do
+To-do List
 -----
 (coming soon)
 
