@@ -1,7 +1,10 @@
 PiBBS
 =====
 
-A web framework, and Forum/BBS web application.
+About
+-----
+
+A web framework, and Forum/BBS web application. It is light-weighted, easy to deploy and extend.
 
 Features include:
 
@@ -11,19 +14,37 @@ Features include:
  - Provide an internal mailbox. 
  - Allow sending external emails and internal emails.
  - Interface works well on desktop, ipad, and mobile devices.
- - Allow creation of new themes, mostly for changing files in /theme and /css.
+ - Allow creation of new themes, mostly by changing files in /theme and /css.
  - Allow customizable settings, in /conf/conf.php. 
+ - Allow English or Chinese version. Easy to extend to other languages.
  
 History
-======
+-----
 
-Development first started in Summer 2013, and stopped for a while. 
-It was picked up again in Summer 2014, and more work were done.
+Development initiated in Summer 2013 as a forum for <a href="http://homecox.com">homecox.com</a>. 
+It stopped for a while, and was picked up again in Summer 2014.
 
 License
-=======
+-----
 Released under Apache/MIT/BSD/GPLv2 license.
 
+User Documentation
+-----
+(coming soon)
+
+System Administrator Documentation
+-----
+(coming soon)
+
+Developer Documentation
+-----
+(coming soon)
+
+To-do List
+-----
+(coming soon)
+
+
 Author
-======
+-----
 X. Chen Copyright @ 2013-2014
