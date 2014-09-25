@@ -13,6 +13,7 @@ Features include:
  - Interface works well on desktop, ipad, and mobile devices.
  - Allow creation of new themes, mostly by changing files in /theme and /css.
  - Allow customizable settings, in /conf/conf.php. 
+ - Allow English or Chinese version. Easy to extend to other languages.
  
 History
 ======
