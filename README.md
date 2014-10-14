@@ -6,7 +6,7 @@ About
 
 A web framework, and Forum/BBS web application. It is light-weighted, easy to deploy and extend.
 
-Features:
+Features include:
 
  - Provide a web framework for sign up, sign in/out, user profile management.
  - Provide a forum/bbs.
