@@ -21,7 +21,7 @@ Features include:
 History
 -----
 
-Development initiated in Summer 2013 as a forum for <a href="http://homecox.com">homecox.com</a>. 
+Development first initiated in Summer 2013 as a forum for <a href="http://homecox.com">homecox.com</a>. 
 It stopped for a while, and was picked up again in Summer 2014.
 
 License
