@@ -121,51 +121,51 @@ function executeScalarArray($query, $col) {
 // First row is for column names. 
 // The rest rows are data.
 //
-    function executeDataTable($query) {
-        global $link;
-        $db_is_open = ($link != '');
-        if (! $db_is_open) db_open();
+function executeDataTable($query) {
+    global $link;
+    $db_is_open = ($link != '');
+    if (! $db_is_open) db_open();
 
-        $ret = array();
+    $ret = array();
 
-        $result = mysql_query($query, $link);
-        if (! $result) {
-            doExit('Invalid query: ' . mysql_error());
+    $result = mysql_query($query, $link);
+    if (! $result) {
+        doExit('Invalid query: ' . mysql_error());
+    }
+
+    $s = "";
+    if (mysql_num_rows($result) > 0) {
+        // Write header and first row.
+        $info = mysql_fetch_array($result);
+        $header = array();
+        $row = array();
+
+        $i = 0;
+        foreach ($info as $key => $val) {
+            if ($i & 1) {
+                array_push($header, $key);
+                array_push($row, $val);
+            }
+            ++ $i;
         }
+        array_push($ret, $header);
+        array_push($ret, $row);
 
-        $s = "";
-        if (mysql_num_rows($result) > 0) {
-            // Write header and first row.
-            $info = mysql_fetch_array($result);
-            $header = array();
+        // Write the rest rows.
+        while ($info = mysql_fetch_array($result)) {
             $row = array();
-
             $i = 0;
             foreach ($info as $key => $val) {
-                if ($i & 1) {
-                    array_push($header, $key);
-                    array_push($row, $val);
-                }
+                if ($i & 1) { array_push($row, $val); }
                 ++ $i;
             }
-            array_push($ret, $header);
             array_push($ret, $row);
-
-            // Write the rest rows.
-            while ($info = mysql_fetch_array($result)) {
-                $row = array();
-                $i = 0;
-                foreach ($info as $key => $val) {
-                    if ($i & 1) { array_push($row, $val); }
-                    ++ $i;
-                }
-                array_push($ret, $row);
-            }
         }
-
-        if (! $db_is_open) db_close();
-        return $ret;
     }
+
+    if (! $db_is_open) db_close();
+    return $ret;
+}
 
 //
 // Return entire table (requested in query) as an associate array. 
@@ -181,69 +181,69 @@ function executeScalarArray($query, $col) {
 //        }
 //    }
 //
-    function executeAssociateDataTable($query) {
-        global $link;
-        $db_is_open = ($link != '');
-        if (! $db_is_open) db_open();
+function executeAssociateDataTable($query) {
+    global $link;
+    $db_is_open = ($link != '');
+    if (! $db_is_open) db_open();
 
-        $ret = array();
+    $ret = array();
 
-        $result = mysql_query($query, $link);
-        if (! $result) {
-            doExit('Invalid query: ' . mysql_error());
-        }
-
-        $s = "";
-        if (mysql_num_rows($result) > 0) {
-            while ($info = mysql_fetch_array($result)) {
-                //print_r($info); print "<br>";
-                array_push($ret, $info);
-            }
-        }
-
-        if (! $db_is_open) db_close();
-        return $ret;
+    $result = mysql_query($query, $link);
+    if (! $result) {
+        doExit('Invalid query: ' . mysql_error());
     }
+
+    $s = "";
+    if (mysql_num_rows($result) > 0) {
+        while ($info = mysql_fetch_array($result)) {
+            //print_r($info); print "<br>";
+            array_push($ret, $info);
+        }
+    }
+
+    if (! $db_is_open) db_close();
+    return $ret;
+}
 
 //
 // First row is for header columns, other rows are for data.
 //
-    function executeAssociateDataTable_2($query) {
-        global $link;
-        $db_is_open = ($link != '');
-        if (! $db_is_open) db_open();
+function executeAssociateDataTable_2($query) {
+    global $link;
+    $db_is_open = ($link != '');
+    if (! $db_is_open) db_open();
 
-        $ret = array();
+    $ret = array();
 
-        $result = mysql_query($query, $link);
-        if (! $result) {
-            doExit('Invalid query: ' . mysql_error());
-        }
-
-        $s = "";
-        if (mysql_num_rows($result) > 0) {
-            // Get the header fields.
-            $header = array();
-            $info = mysql_fetch_array($result, MYSQL_ASSOC);
-            foreach ($info as $key => $val) {
-                //array_push($header, $key); // => [0] = [key] ...
-                $header[$key] = $key;        // => [key] = [key] ...
-            }
-            array_push($ret, $header);
-
-            // Get the first data row.
-            array_push($ret, $info);
-
-            // Get the other data rows.
-            while ($info = mysql_fetch_array($result, MYSQL_ASSOC)) {
-                //print_r($info); print "<br>";
-                array_push($ret, $info);
-            }
-        }
-
-        if (! $db_is_open) db_close();
-        return $ret;
+    $result = mysql_query($query, $link);
+    if (! $result) {
+        doExit('Invalid query: ' . mysql_error());
     }
+
+    $s = "";
+    if (mysql_num_rows($result) > 0) {
+        // Get the header fields.
+        $header = array();
+        $info = mysql_fetch_array($result, MYSQL_ASSOC);
+        foreach ($info as $key => $val) {
+            //array_push($header, $key); // => [0] = [key] ...
+            $header[$key] = $key;        // => [key] = [key] ...
+        }
+        array_push($ret, $header);
+
+        // Get the first data row.
+        array_push($ret, $info);
+
+        // Get the other data rows.
+        while ($info = mysql_fetch_array($result, MYSQL_ASSOC)) {
+            //print_r($info); print "<br>";
+            array_push($ret, $info);
+        }
+    }
+
+    if (! $db_is_open) db_close();
+    return $ret;
+}
 
 
 //

@@ -41,7 +41,9 @@ function db_open() {
 
 /**
  * Procedural way to open database (not recommended).
+ * Disable this function and not use it.
  */
+/*
 function db_open2() {
     global $host, $db_usr, $db_pwd, $db, $link;
     $link = mysqli_connect($host, $db_usr, $db_pwd, $db);
@@ -52,17 +54,18 @@ function db_open2() {
         doExit('Database connection failed: ' . mysqli_connect_error());
     }
 }
+*/
 
 
 /**
  * Close database connection. Used for both OO and procedural ways.
  */
 function db_close() {
-    print "<br/>Enter db_close() ...<br/>";
+    //print "<br/>Enter db_close() ...<br/>";
     global $link;
     $link->close();
     $link = '';
-    print "<br/>db_close(): db closed<br/>";
+    //print "<br/>db_close(): db closed<br/>";
 }
 
 
