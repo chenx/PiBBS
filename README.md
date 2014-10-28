@@ -62,14 +62,14 @@ The default installation contains five boards: Computer Science, Programming Wor
 News, Just for fun, Forum Administration.
 </p>
 
-<a href="image/home1_en.png"><img src="image/home1_en.png" class="screenshot"></a>
+<a href="image/home1_en.png"><img src="image/home1_en.png" class="screenshot" alt="homepage screenshot"></a>
 
 <h3>U.2 Interface of a board</h3>
 <p>
 This is the "Forum" view of a board. The "Digests" view shows articles labeled as digests, which
 will show in the homepage digest list. The "Marks" view shows articles marked as important.
 </p>
-<a href="image/board1_en.png"><img src="image/board1_en.png" class="screenshot"></a>
+<a href="image/board1_en.png"><img src="image/board1_en.png" class="screenshot" alt="board screenshot"></a>
 
 <h3>U.3 Post special tags</h3>
 <p>
