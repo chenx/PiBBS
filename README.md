@@ -37,14 +37,14 @@ The default installation contains five boards: Computer Science, Programming Wor
 News, Just for fun, Forum Administration.
 </p>
 
-<a href="image/home1_en.png"><img src="image/home1_en.png" class="screenshot" alt="homepage screenshot"></a>
+<a href="http://cssauh.com/xc/PiBBS/INSTALL/doc/image/home1_en.png"><img src="http://cssauh.com/xc/PiBBS/INSTALL/doc/image/home1_en.png" class="screenshot" alt="homepage screenshot"></a>
 
 <h3>U.2 Interface of a board</h3>
 <p>
 This is the "Forum" view of a board. The "Digests" view shows articles labeled as digests, which
 will show in the homepage digest list. The "Marks" view shows articles marked as important.
 </p>
-<a href="image/board1_en.png"><img src="image/board1_en.png" class="screenshot" alt="board screenshot"></a>
+<a href="http://cssauh.com/xc/PiBBS/INSTALL/doc/image/board1_en.png"><img src="http://cssauh.com/xc/PiBBS/INSTALL/doc/image/board1_en.png" class="screenshot" alt="board screenshot"></a>
 
 <h3>U.3 Post special tags</h3>
 <p>
@@ -74,7 +74,7 @@ Post allows only plain text initially. Then special tags are added to make posts
 
 <p>For example, this post contains a video, two images, an underlined line and a line in bold text.
 </p>
-<a href="image/post_tags.png"><img src="image/post_tags.png" class="screenshot"  alt="post tags screenshot"></a>
+<a href="http://cssauh.com/xc/PiBBS/INSTALL/doc/image/post_tags.png"><img src="http://cssauh.com/xc/PiBBS/INSTALL/doc/image/post_tags.png" class="screenshot"  alt="post tags screenshot"></a>
 
 <p>
 Note that these tags used by BBS are also used identically by I-Mail.
@@ -82,38 +82,38 @@ Note that these tags used by BBS are also used identically by I-Mail.
 
 
 <h3>U.4 Register An Account</h3>
-<a href="image/register_en.png"><img src="image/register_en.png" class="screenshot"  alt="register screenshot"></a>
+<a href="http://cssauh.com/xc/PiBBS/INSTALL/doc/image/register_en.png"><img src="http://cssauh.com/xc/PiBBS/INSTALL/doc/image/register_en.png" class="screenshot"  alt="register screenshot"></a>
 
 <h3>U.5 Sign in</h3>
 <p>There are 2 choices: 1) regular sign in, 2) Linkedin sign in.</p>
-<a href="image/login_en.png"><img src="image/login_en.png" class="screenshot"  alt="login screenshot"></a>
+<a href="http://cssauh.com/xc/PiBBS/INSTALL/doc/image/login_en.png"><img src="http://cssauh.com/xc/PiBBS/INSTALL/doc/image/login_en.png" class="screenshot"  alt="login screenshot"></a>
 
 <h3>U.6 User menu and Profile after sign in</h3>
 <p>Figure below shows the user menu, and the basic profile page.
 Note only those users who are board managers can see the "Manage Boards" entry.
 </p>
-<a href="image/profile_en.png"><img src="image/profile_en.png" class="screenshot"  alt="profile screenshot"></a>
+<a href="http://cssauh.com/xc/PiBBS/INSTALL/doc/image/profile_en.png"><img src="http://cssauh.com/xc/PiBBS/INSTALL/doc/image/profile_en.png" class="screenshot"  alt="profile screenshot"></a>
 
 <h3>U.7 User Avatar</h3>
 <p>The user avatar uses universal icon from gravatar.com.</p>
-<a href="image/avatar_en.png"><img src="image/avatar_en.png" class="screenshot" alt="avatar screenshot"></a>
+<a href="http://cssauh.com/xc/PiBBS/INSTALL/doc/image/avatar_en.png"><img src="http://cssauh.com/xc/PiBBS/INSTALL/doc/image/avatar_en.png" class="screenshot" alt="avatar screenshot"></a>
 
 <h3>U.8 Internal Mail: I-Mail</h3>
 <p>There is a internal mailbox (I-Mail) users can use for private communication with other registered users.</p>
-<a href="image/mailbox_en.png"><img src="image/mailbox_en.png" class="screenshot" alt="I-Mail screenshot"></a>
+<a href="http://cssauh.com/xc/PiBBS/INSTALL/doc/image/mailbox_en.png"><img src="http://cssauh.com/xc/PiBBS/INSTALL/doc/image/mailbox_en.png" class="screenshot" alt="I-Mail screenshot"></a>
 
 <h3>U.9 Compose I-Mail</h3>
 <p>This shows the interface to compose an internal mail. The user can send group I-Mail to multiple users. 
 Attachment is allowed.</p>
-<a href="image/imail_compose_en.png"><img src="image/imail_compose_en.png" class="screenshot" alt="I-Mail Compose screenshot"></a>
+<a href="http://cssauh.com/xc/PiBBS/INSTALL/doc/image/imail_compose_en.png"><img src="http://cssauh.com/xc/PiBBS/INSTALL/doc/image/imail_compose_en.png" class="screenshot" alt="I-Mail Compose screenshot"></a>
 
 <h3>U.10 User List</h3>
 <p>Under the "Forum" menu there is a "User List" submenu. Click on this shows a list of registered users.</p>
-<a href="image/user_list_en.png"><img src="image/user_list_en.png" class="screenshot" alt="user list screenshot"></a>
+<a href="http://cssauh.com/xc/PiBBS/INSTALL/doc/image/user_list_en.png"><img src="http://cssauh.com/xc/PiBBS/INSTALL/doc/image/user_list_en.png" class="screenshot" alt="user list screenshot"></a>
 
 <h3>U.11 External Mail: E-Mail</h3>
 <p>From the user list one can send an external email to another registered user. The user's registration email is used.</p>
-<a href="image/email_compose_en.png"><img src="image/email_compose_en.png" class="screenshot" alt="email compose screenshot"></a>
+<a href="http://cssauh.com/xc/PiBBS/INSTALL/doc/image/email_compose_en.png"><img src="http://cssauh.com/xc/PiBBS/INSTALL/doc/image/email_compose_en.png" class="screenshot" alt="email compose screenshot"></a>
 
 
 <hr>
@@ -149,7 +149,7 @@ A board can be Private, Hidden, and/or Readonly. </p>
 <li>No one can post in a Readonly board.
 </ul>
 </p>
-<a href="image/manage_board_en.png"><img src="image/manage_board_en.png" class="screenshot" alt="manage board screenshot"></a>
+<a href="http://cssauh.com/xc/PiBBS/INSTALL/doc/image/manage_board_en.png"><img src="http://cssauh.com/xc/PiBBS/INSTALL/doc/image/manage_board_en.png" class="screenshot" alt="manage board screenshot"></a>
 
 <h3>B.2 Manage Private Board Members</h3>
 
@@ -157,7 +157,7 @@ A board can be Private, Hidden, and/or Readonly. </p>
 The board master can add or remove a member to/from the board's members.
 </p>
 
-<a href="image/manage_board_members_en.png"><img src="image/manage_board_members_en.png" class="screenshot" alt="manage board members screenshot"></a>
+<a href="http://cssauh.com/xc/PiBBS/INSTALL/doc/image/manage_board_members_en.png"><img src="http://cssauh.com/xc/PiBBS/INSTALL/doc/image/manage_board_members_en.png" class="screenshot" alt="manage board members screenshot"></a>
 
 
 <h3>B.3 Manage Posts</h3>
@@ -165,14 +165,14 @@ The board master can add or remove a member to/from the board's members.
 <p>The board master can manage posts on the board. A board master will see the "Turn On Manage Mode" link below.
 </p>
 
-<a href="image/bm_board_en.png"><img src="image/bm_board_en.png" class="screenshot" alt="boardmaster screenshot"></a>
+<a href="http://cssauh.com/xc/PiBBS/INSTALL/doc/image/bm_board_en.png"><img src="http://cssauh.com/xc/PiBBS/INSTALL/doc/image/bm_board_en.png" class="screenshot" alt="boardmaster screenshot"></a>
 
 <p>Turn On Manage Mode, the board master sees the below options:</p>
 
-<a href="image/bm_board_manage_en.png"><img src="image/bm_board_manage_en.png" class="screenshot" alt="boardmaster manage screenshot"></a>
+<a href="http://cssauh.com/xc/PiBBS/INSTALL/doc/image/bm_board_manage_en.png"><img src="http://cssauh.com/xc/PiBBS/INSTALL/doc/image/bm_board_manage_en.png" class="screenshot" alt="boardmaster manage screenshot"></a>
 
 <p>Click into the post, the board master sees the below options to manage each post individually:</p>
-<a href="image/bm_post_manage_en.png"><img src="image/bm_post_manage_en.png" class="screenshot" alt="boardmaster post manage screenshot"></a>
+<a href="http://cssauh.com/xc/PiBBS/INSTALL/doc/image/bm_post_manage_en.png"><img src="http://cssauh.com/xc/PiBBS/INSTALL/doc/image/bm_post_manage_en.png" class="screenshot" alt="boardmaster post manage screenshot"></a>
 
 
 <hr>
@@ -186,7 +186,7 @@ The system administrator by default has all the permissions of a board master.
 
 <h3>S.1 System admin interface</h3>
 <p>The figure below shows current functions a system administrator has access to.</p>
-<a href="image/admin_en.png"><img src="image/admin_en.png" class="screenshot" alt="admin screenshot"></a>
+<a href="http://cssauh.com/xc/PiBBS/INSTALL/doc/image/admin_en.png"><img src="http://cssauh.com/xc/PiBBS/INSTALL/doc/image/admin_en.png" class="screenshot" alt="admin screenshot"></a>
 
 
 <h3>S.2 Manage users</h3>
@@ -221,7 +221,7 @@ including add/udpate/delete.</p>
 
 <p><b>S.2.2 Manage boards</b></p>
 <p>The "Manage BBS Board Tables (add/remove board/forum)" page allows a new board to be created.</p>
-<a href="image/admin_manage_boards_en.png"><img src="image/admin_manage_boards_en.png" class="screenshot" alt="admin manage board screenshot"></a>
+<a href="http://cssauh.com/xc/PiBBS/INSTALL/doc/image/admin_manage_boards_en.png"><img src="http://cssauh.com/xc/PiBBS/INSTALL/doc/image/admin_manage_boards_en.png" class="screenshot" alt="admin manage board screenshot"></a>
 
 <p>
 A new board can be added here. 
@@ -273,7 +273,7 @@ Links involved are:
 
 <p><b>S.5.1 Backup Database</b></p>
 <p>The allow backup site database from web interface.</p>
-<a href="image/admin_backup_db_en.png"><img src="image/admin_backup_db_en.png" class="screenshot" alt="admin backup database screenshot"></a>
+<a href="http://cssauh.com/xc/PiBBS/INSTALL/doc/image/admin_backup_db_en.png"><img src="http://cssauh.com/xc/PiBBS/INSTALL/doc/image/admin_backup_db_en.png" class="screenshot" alt="admin backup database screenshot"></a>
 
 
 <h3>S.6 Reports</h3>
