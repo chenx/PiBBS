@@ -42,7 +42,7 @@
 <a href="#U.7_User_Avatar">U.7 User Avatar</a>
 </li>
 <li>
-<a href="#U.8_Internal_Mail:_I-Mail">U.8 Internal Mail: I-Mail</a>
+<a href="#U.8_Internal_Mail_I-Mail">U.8 Internal Mail: I-Mail</a>
 </li>
 <li>
 <a href="#U.9_Compose_I-Mail">U.9 Compose I-Mail</a>
@@ -51,7 +51,7 @@
 <a href="#U.10_User_List">U.10 User List</a>
 </li>
 <li>
-<a href="#U.11_External_Mail:_E-Mail">U.11 External Mail: E-Mail</a>
+<a href="#U.11_External_Mail_E-Mail">U.11 External Mail: E-Mail</a>
 </li>
 </ul>
 <li>
@@ -318,7 +318,7 @@ To show underlined text:
 <img class="screenshot" alt="avatar screenshot" src="http://cssauh.com/xc/PiBBS/INSTALL/doc/image/avatar_en.png" style="display: block; width: 1000px;">
 </a>
 <h3>
-<a name="U.8_Internal_Mail:_I-Mail">U.8 Internal Mail: I-Mail</a>
+<a name="U.8_Internal_Mail_I-Mail">U.8 Internal Mail: I-Mail</a>
 </h3>
 <p>There is a internal mailbox (I-Mail) users can use for private communication with other registered users.</p>
 <a href="http://cssauh.com/xc/PiBBS/INSTALL/doc/image/mailbox_en.png">
@@ -339,7 +339,7 @@ To show underlined text:
 <img class="screenshot" alt="user list screenshot" src="http://cssauh.com/xc/PiBBS/INSTALL/doc/image/user_list_en.png" style="display: block; width: 1000px;">
 </a>
 <h3>
-<a name="U.11_External_Mail:_E-Mail">U.11 External Mail: E-Mail</a>
+<a name="U.11_External_Mail_E-Mail">U.11 External Mail: E-Mail</a>
 </h3>
 <p>From the user list one can send an external email to another registered user. The user's registration email is used.</p>
 <a href="http://cssauh.com/xc/PiBBS/INSTALL/doc/image/email_compose_en.png">
