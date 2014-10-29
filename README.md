@@ -625,8 +625,7 @@ Return entire table (requested in query) as an associate array.
 Compared to executeDataTable, this shifts the processing to calling function.
 <br>
 Synopsis:
-<pre> 
-$t = executeAssociateDataTable($sql); 
+<pre>$t = executeAssociateDataTable($sql); 
 $len = count($t); 
 for ($i = 0; $i < $len; ++ $i) { 
     $row = $t[$i]; 
@@ -766,8 +765,8 @@ Check if a user has signed in.
 <br>
 Synopsis:
 <pre>&lt;?php 
-session_start(); 
-require_once("../func/auth.php"); 
+  session_start(); 
+  require_once("../func/auth.php"); 
 ?&gt; </pre>
 </li>
 <li>
@@ -776,9 +775,10 @@ require_once("../func/auth.php");
 Check if a signed in user is a board master.
 <br>
 Synopsis:
-<pre>&lt;?php session_start(); 
-require_once("../func/auth.php"); 
-require_once("../func/auth_board_manager.php"); 
+<pre>&lt;?php 
+  session_start(); 
+  require_once("../func/auth.php"); 
+  require_once("../func/auth_board_manager.php"); 
 ?&gt; </pre>
 </li>
 <li>
@@ -788,9 +788,9 @@ Check if a signed in user is a system administrator.
 <br>
 Synopsis:
 <pre>&lt;?php 
-session_start(); 
-require_once("../func/auth.php"); 
-require_once("../func/auth_admin.php"); 
+  session_start(); 
+  require_once("../func/auth.php"); 
+  require_once("../func/auth_admin.php"); 
 ?&gt; </pre>
 </li>
 </ul>
