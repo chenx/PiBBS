@@ -172,6 +172,11 @@ $_USE_IMAIL = 1;
 $_IMAIL_NOTIFY = 1;
 
 /////////////////////////////////////////////
+// Need this code to access page imail_notify.php.
+// Not use session protection, because want to setup crontab for this page.
+$_IMAIL_NOTIFY_ACCESS_CODE = 'xyNDHja4s2H8dfOjF4xiLkl2lEgD3F';
+
+/////////////////////////////////////////////
 // Number of days to wait before another
 // email notification.
 // If 0, notify only once.
