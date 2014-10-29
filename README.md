@@ -1,9 +1,3 @@
-<style>
-.screenshot {
-    width: 100%;
-    border: 1px solid #CCCCCC;
-}
-</style>
 
 <h1>PiBBS Documentation</h1>
 
