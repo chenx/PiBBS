@@ -8,12 +8,13 @@ session_start();
 
 //require_once("../func/auth.php");
 //require_once("../func/auth_admin.php");
+require_once("../conf/conf.php"); // for $_IMAIL_NOTIFY_ACCESS_CODE
 require_once("../func/db.php");
 require_once("../func/email.php");
 
 $page_title = "Admin - IMail notification";
 
-if (! isset($_REQUEST['code']) || $_REQUEST['code'] != "ABNDfja3s238dfljF5xiLkl2lE8DfF") {
+if (! isset($_REQUEST['code']) || $_REQUEST['code'] != $_IMAIL_NOTIFY_ACCESS_CODE) {
     //print "You have no permission to enter this page";
     header("Location: ./");
     exit();
