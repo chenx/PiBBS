@@ -942,3 +942,34 @@ Contact:
 |
 <a href="https://github.com/chenx/PiBBS">Download</a>
 </div>
+
+
+<script type="text/javascript">
+
+/**
+ * Adjust image display.
+ */
+function disp_img(v) {
+    var imgs = document.getElementsByClassName('screenshot');
+
+    for (var i = 0; i < imgs.length; ++i) {
+        var item = imgs[i];  
+
+        if (v == 0) { 
+            item.style.display = 'none'; 
+        }
+        else if (v == 1) {  
+            item.style.display = 'block';
+            item.style.width = '100px'; 
+        }
+        else if (v == 2) {  
+            item.style.display = 'block';
+            item.style.width = '300px'; 
+        }
+        else { 
+            item.style.display = 'block';
+            item.style.width = '1000px'; 
+        }
+    }
+}
+</script>
