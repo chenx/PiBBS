@@ -1,15 +1,6 @@
 
 <h1>PiBBS Documentation</h1>
-<div class="show_image_option">
-Image Display Options:
-<a title="No display" onclick="javascript: disp_img(0);" href="#">none</a>
-|
-<a title="Width: 100px" onclick="javascript: disp_img(1);" href="#">icon</a>
-|
-<a title="Width: 300px" onclick="javascript: disp_img(2);" href="#">small</a>
-|
-<a title="Width: 1000px. Is default size." onclick="javascript: disp_img(3);" href="#">large</a>
-</div>
+
 <div style="font-style: italic;"> Created on: 10/27/2014, Last modified: 10/27/2014 </div>
 <hr>
 <div id="toc" style="background: #eee;">
@@ -943,33 +934,3 @@ Contact:
 <a href="https://github.com/chenx/PiBBS">Download</a>
 </div>
 
-
-<script type="text/javascript">
-
-/**
- * Adjust image display.
- */
-function disp_img(v) {
-    var imgs = document.getElementsByClassName('screenshot');
-
-    for (var i = 0; i < imgs.length; ++i) {
-        var item = imgs[i];  
-
-        if (v == 0) { 
-            item.style.display = 'none'; 
-        }
-        else if (v == 1) {  
-            item.style.display = 'block';
-            item.style.width = '100px'; 
-        }
-        else if (v == 2) {  
-            item.style.display = 'block';
-            item.style.width = '300px'; 
-        }
-        else { 
-            item.style.display = 'block';
-            item.style.width = '1000px'; 
-        }
-    }
-}
-</script>
