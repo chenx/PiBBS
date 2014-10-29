@@ -1,3 +1,9 @@
+<style media="handheld, only screen and (max-device-width: 480px)">
+.screenshot {
+    width: 100%;
+    border: 1px solid #CCCCCC;
+}
+</style>
 
 <h1>PiBBS Documentation</h1>
 
@@ -625,7 +631,15 @@ Return entire table (requested in query) as an associate array.
 Compared to executeDataTable, this shifts the processing to calling function.
 <br>
 Synopsis:
-<pre> $t = executeAssociateDataTable($sql); $len = count($t); for ($i = 0; $i < $len; ++ $i) { $row = $t[$i]; foreach ($row as $key => $val) { print "$key => $val, or value is: $row[$key]"; } } </pre>
+<pre> 
+$t = executeAssociateDataTable($sql); 
+$len = count($t); 
+for ($i = 0; $i < $len; ++ $i) { 
+    $row = $t[$i]; 
+    foreach ($row as $key => $val) { 
+        print "$key => $val, or value is: $row[$key]"; 
+    } 
+} </pre>
 </li>
 <li>
 executeAssociateDataTable_2($query)
@@ -757,7 +771,10 @@ To use the authentication mechanism of this framework is very easy, just include
 Check if a user has signed in.
 <br>
 Synopsis:
-<pre><?php session_start(); require_once("../func/auth.php"); ?> </pre>
+<pre>&lt;?php 
+session_start(); 
+require_once("../func/auth.php"); 
+?&gt; </pre>
 </li>
 <li>
 /func/auth_board_manager.php
@@ -765,7 +782,10 @@ Synopsis:
 Check if a signed in user is a board master.
 <br>
 Synopsis:
-<pre><?php session_start(); require_once("../func/auth.php"); require_once("../func/auth_board_manager.php"); ?> </pre>
+<pre>&lt;?php session_start(); 
+require_once("../func/auth.php"); 
+require_once("../func/auth_board_manager.php"); 
+?&gt; </pre>
 </li>
 <li>
 /func/auth_admin.php
@@ -773,7 +793,11 @@ Synopsis:
 Check if a signed in user is a system administrator.
 <br>
 Synopsis:
-<pre><?php session_start(); require_once("../func/auth.php"); require_once("../func/auth_admin.php"); ?> </pre>
+<pre>&lt;?php 
+session_start(); 
+require_once("../func/auth.php"); 
+require_once("../func/auth_admin.php"); 
+?&gt; </pre>
 </li>
 </ul>
 <h3>
