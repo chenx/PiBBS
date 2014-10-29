@@ -44,7 +44,7 @@ include_once("../theme/header.php");
 <li><a href="admin_list.php?tbl=IMailRecv">IMailRecv</a> (Check receive activity)
 <li><a href="admin_list.php?tbl=IMailRecvNotify">IMailRecvNotify</a>
 <li><a href="admin_list.php?tbl=IMailState">IMailState</a>
-<li><a href="../imail/imail_notify.php?code=ABNDfja3s238dfljF5xiLkl2lE8DfF">IMail email notification</a>
+<li><a href="../imail/imail_notify.php?code=<?php print $_IMAIL_NOTIFY_ACCESS_CODE; ?>">IMail email notification</a>
 </ul>
 
 <p>Views</p>
