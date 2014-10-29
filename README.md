@@ -1,7 +1,7 @@
 
 <h1>PiBBS Documentation</h1>
 
-<div style="font-style: italic;"> Created on: 10/27/2014, Last modified: 10/27/2014 </div>
+<div style="font-style: italic;"> Created on: 10/27/2014, Last modified: 10/28/2014 </div>
 <hr>
 <div id="toc" style="background: #eee;">
 <h3>Table of Contents</h3>
