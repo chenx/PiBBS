@@ -31,7 +31,7 @@ Released under Apache/MIT/BSD/GPLv2 license.
 <hr>
 <h2>User Documentation</h2>
 
-<h3>U.1 The homepage.</h3>
+<h3>U.1 The homepage</h3>
 <p>
 The default installation contains five boards: Computer Science, Programming World, 
 News, Just for fun, Forum Administration.
@@ -215,11 +215,11 @@ Links involved are:
 </ul>
 </p>
 
-<p><b>S.2.1 Manage BBS Board Tables.</b></p>
+<h4>S.2.1 Manage BBS board tables.</h4>
 <p>A board belongs to a group. Use the "BBS BoardGroups (BBS Board Group)" link to manage groups, 
 including add/udpate/delete.</p>
 
-<p><b>S.2.2 Manage boards</b></p>
+<h4>S.2.2 Manage boards</h4>
 <p>The "Manage BBS Board Tables (add/remove board/forum)" page allows a new board to be created.</p>
 <a href="http://cssauh.com/xc/PiBBS/INSTALL/doc/image/admin_manage_boards_en.png"><img src="http://cssauh.com/xc/PiBBS/INSTALL/doc/image/admin_manage_boards_en.png" class="screenshot" alt="admin manage board screenshot"></a>
 
@@ -271,7 +271,7 @@ Links involved are:
 </ul>
 </p>
 
-<p><b>S.5.1 Backup Database</b></p>
+<h4>S.5.1 Backup Database</h4>
 <p>The allow backup site database from web interface.</p>
 <a href="http://cssauh.com/xc/PiBBS/INSTALL/doc/image/admin_backup_db_en.png"><img src="http://cssauh.com/xc/PiBBS/INSTALL/doc/image/admin_backup_db_en.png" class="screenshot" alt="admin backup database screenshot"></a>
 
@@ -298,7 +298,7 @@ Under the forum directory there is a /conf folder, which contains these configur
 </ul>
 </p>
 
-<p><b>S.7.1 conf.php</b></p>
+<h4>S.7.1 conf.php</h4>
 
 <p>This allows many settings, for example:
 <ul>
@@ -318,7 +318,19 @@ Under the forum directory there is a /conf folder, which contains these configur
 </p>
 
 
-<p><b>S.7.2 linkedin_conf.php</b></p>
+<h4>S.7.2 db_conf.php</h4>
+
+<p>This file contains database connection parameters: 
+<ul>
+<li>host name
+<li>database name
+<li>database user
+<li>database password
+</ul>
+</p>
+
+
+<h4>S.7.3 linkedin_conf.php</h4>
 
 <p>This file contains linkedin parameters: 
 <ul>
@@ -329,14 +341,14 @@ Under the forum directory there is a /conf folder, which contains these configur
 </ul>
 </p>
 
-<p><b>S.7.3 upload_conf.php</b></p>
+<h4>S.7.4 upload_conf.php</h4>
 
 <p>
 This file contains upload parameters: 
 <ul>
 <li>Max file size.
-<li>Allow file extensions.
-<li>Upload file root.
+<li>Allowed file extensions.
+<li>Upload file root directory.
 </ul>
 </p>
 
@@ -356,7 +368,7 @@ This section talks about several important aspects if one wants to develop based
 /func/db.php uses the mysql connection system calls, which is deprecated by MySQL since 2012. 
 /func/db_mysqli.php uses the mysqli connection system calls and is preferred.
 
-<p>The API functions:
+<p>The API functions are:
 
 <ul>
 <li>db_open()
@@ -390,7 +402,7 @@ This section talks about several important aspects if one wants to develop based
 <br/>Return entire table (requested in query) as an associate array.
 <br/>Compared to executeDataTable, this shifts the processing to calling function.
 <br/>Synopsis: <pre>
-   $t = executeAssociateDataTable_2($sql);
+   $t = executeAssociateDataTable($sql);
    $len = count($t);
    for ($i = 0; $i < $len; ++ $i) {
        $row = $t[$i];
@@ -412,6 +424,12 @@ but the first row is for header columns, other rows are for data.
 <br/>$do_htmlencode: value is boolean. whether apply db_htmlencode to contents.
 
 </ul>
+
+
+<p>
+Basically, these functions hide database access details.
+Returned data are either scalar variable or array, thus easy to munipulate.
+</p>
 
 <p>Other related functions:
 <ul>
@@ -543,9 +561,9 @@ This framework allows a central place to create and use new themes in the /theme
 <ul>
 <li>Change /theme/themes.php, for forum's top row banner image and other elements
 <li>In /css, create a new sub-directory, with these css files:
-<br/>a) digest.css (for bbs digest), 
-<br/>b) menu.css (for menu), bbs.css, 
-<br/>c) bbs_mobile.css (for bbs, both desktop and mobile versions), 
+<br/>a) digest.css (for BBS digest), 
+<br/>b) menu.css (for menu),  
+<br/>c) bbs.css, bbs_mobile.css (for BBS, both desktop and mobile versions), 
 <br/>d) site.css, site_mobile.css (for entire site, both desktop and mobile versions).
 </ul>
 </p>
@@ -586,11 +604,11 @@ as the part of the the storage folder name.
 
 <h3>D.6 Miscellaneous</h3>
 
-<p><b>D.6.1 Google Analytics</b></p>
+<h4>D.6.1 Google analytics</h4>
 
 You can include your analytics code in /js/analytics.php, which is included in theme/footer.php by default.
 
-<p><b>D.6.2 Social media promotion icons</b></p>
+<h4>D.6.2 Social media promotion icons</h4>
 
 The jiathis.com icon panel is used. The code is in /theme/share.php and included in theme/footer.php by default.
 
@@ -633,6 +651,17 @@ The jiathis.com icon panel is used. The code is in /theme/share.php and included
 <li>email notification of new post
 </ul>
 
+<h3>Database table name prefix</h3>
+<ul>
+<li>Wordpress and Drupal both allow to use prefix for database tables.
+<br/>This avoids potential name conflict, and is a nice feature to have.
+</ul>
+
+<h3>Site-wide Improvements</h3>
+<ul>
+<li>Improve on the modular design of the site, to allow easy addition of new modules.
+</ul>
+
 
 <hr>
 <h2>Author</h2>
@@ -643,3 +672,4 @@ Copyright &copy; 2013-2014<br/>
 Contact: 
 <a href="mailto: homecoxoj@gmail.com">Email</a> | 
 <a href="https://github.com/chenx/PiBBS">Download</a>
+
