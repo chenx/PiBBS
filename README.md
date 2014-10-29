@@ -192,7 +192,7 @@
 <h2>
 <a name="About">About</a>
 </h2>
-<p>A web framework, and Forum/BBS web application. It is light-weighted, easy to deploy and extend. It displays well in both desktop computer and mobile phones. </p>
+<p>PiBBS is a web framework, and Forum/BBS web application. It is light-weighted, easy to deploy and extend. It displays well on both desktop computers and mobile phones. </p>
 <p>Features include: </p>
 <ul>
 <li>Provide a web framework for sign up, sign in/out, user profile management. </li>
