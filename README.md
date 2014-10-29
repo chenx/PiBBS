@@ -1,4 +1,4 @@
-<style media="handheld, only screen and (max-device-width: 480px)">
+<style>
 .screenshot {
     width: 100%;
     border: 1px solid #CCCCCC;
