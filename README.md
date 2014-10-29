@@ -151,7 +151,7 @@
 <a href="#D.6.1_Google_analytics">D.6.1 Google analytics</a>
 </li>
 <li>
-<a href="#D.6.2_Social_media_promotion_icons">D.6.2 Social media promotion icons</a>
+<a href="#D.6.2_Social_media_sharing_icons">D.6.2 Social media sharing icons</a>
 </li>
 </ul>
 </ul>
@@ -877,7 +877,7 @@ d) site.css, site_mobile.css (for entire site, both desktop and mobile versions)
 </h4>
 You can include your analytics code in /js/analytics.php, which is included in theme/footer.php by default.
 <h4>
-<a name="D.6.2_Social_media_promotion_icons">D.6.2 Social media promotion icons</a>
+<a name="D.6.2_Social_media_sharing_icons">D.6.2 Social media sharing icons</a>
 </h4>
 The jiathis.com icon panel is used. The code is in /theme/share.php and included in theme/footer.php by default.
 <hr>
