@@ -922,16 +922,19 @@ The jiathis.com icon panel is used. The code is in /theme/share.php and included
 <li>email notification of response </li>
 <li>email notification of new post </li>
 </ul>
-<h3>
-<a name="Database_table_name_prefix">Database table name prefix</a>
-</h3>
+
+<h3>Database</h3>
 <ul>
-<li>
-Wordpress and Drupal both allow to use prefix for database tables.
-<br>
-This avoids potential name conflict, and is a nice feature to have.
-</li>
+<li>Support PDO connection. 
+<br/>PDO is the 3rd connection type supported by MySQL now, besides mysql and mysqli.
+<br/>PDO supports 12 different drivers.
+<br/>This will be a new file: /func/db_pdo.php
+<li>Prepared statements optimization.
+<li>Database table name prefix.
+<br/>Wordpress and Drupal both allow to use prefix for database tables.
+<br/>This avoids potential name conflict, and is a nice feature to have.
 </ul>
+
 <h3>
 <a name="Site-wide_Improvements">Site-wide Improvements</a>
 </h3>
