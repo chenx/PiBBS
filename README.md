@@ -17,7 +17,7 @@
 <a href="#License">License</a>
 </li>
 <li>
-<a name="#System_Requirements">System Requirements</a>
+<a href="#System_Requirements">System Requirements</a>
 </li>
 <li>
 <a href="#User_Documentation">User Documentation</a>
