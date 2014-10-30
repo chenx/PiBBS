@@ -157,6 +157,19 @@ It stopped for a while, and was picked up again in Summer 2014.
 
 
 <hr>
+<h2>System Requirements</h2>
+
+<p>
+Development environment was: 
+<ul>
+<li>PHP 5.4.34 
+<li>Mysql  Ver 14.14 Distrib 5.5.38-35.2, for Linux (x86_64) using readline 5.1.
+</ul>
+</p>
+
+<p>Earlier versions of PHP and MySQL may work but were not tested.</p>
+
+<hr>
 <h2>User Documentation</h2>
 
 <h3>U.1 The homepage</h3>
@@ -779,9 +792,15 @@ The jiathis.com icon panel is used. The code is in /theme/share.php and included
 <li>email notification of new post
 </ul>
 
-<h3>Database table name prefix</h3>
+<h3>Database Improvements</h3>
 <ul>
-<li>Wordpress and Drupal both allow to use prefix for database tables.
+<li>Support PDO connection. 
+<br/>PDO is the 3rd connection type supported by MySQL now, besides mysql and mysqli.
+<br/>PDO supports 12 different drivers.
+<br/>This will be a new file: /func/db_pdo.php
+<li>Prepared statements optimization.
+<li>Database table name prefix.
+<br/>Wordpress and Drupal both allow to use prefix for database tables.
 <br/>This avoids potential name conflict, and is a nice feature to have.
 </ul>
 
