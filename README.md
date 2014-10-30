@@ -17,6 +17,9 @@
 <a href="#License">License</a>
 </li>
 <li>
+<a name="System_Requirements">System Requirements</a>
+</li>
+<li>
 <a href="#User_Documentation">User Documentation</a>
 </li>
 <ul>
@@ -219,6 +222,20 @@ Development first initiated in Summer 2013 as a forum for
 <a name="License">License</a>
 </h2>
 <p>Released under Apache/MIT/BSD/GPLv2 license. </p>
+
+<hr>
+<h2>
+<a name="System_Requirements">System Requirements</a>
+</h2>
+<p>
+Development environment was: 
+<ul>
+<li>PHP 5.4.34 
+<li>Mysql  Ver 14.14 Distrib 5.5.38-35.2, for Linux (x86_64) using readline 5.1.
+</ul>
+</p>
+<p>Earlier versions of PHP and MySQL may work but were not tested.</p>
+
 <hr>
 <h2>
 <a name="User_Documentation">User Documentation</a>
