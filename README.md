@@ -175,7 +175,7 @@
 <a href="#BBS_post_tag_buttons">BBS post tag buttons</a>
 </li>
 <li>
-<a href="#Database_table_name_prefix">Database table name prefix</a>
+<a href="#Database_Improvements">Database Improvements</a>
 </li>
 <li>
 <a href="#Site-wide_Improvements">Site-wide Improvements</a>
@@ -923,7 +923,9 @@ The jiathis.com icon panel is used. The code is in /theme/share.php and included
 <li>email notification of new post </li>
 </ul>
 
-<h3>Database</h3>
+<h3>
+<a name="Database_Improvements">Database Improvements</a>
+</h3>
 <ul>
 <li>Support PDO connection. 
 <br/>PDO is the 3rd connection type supported by MySQL now, besides mysql and mysqli.
