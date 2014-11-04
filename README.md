@@ -1006,7 +1006,7 @@ The jiathis.com icon panel is used. The code is in /theme/share.php and included
 <a name="Change_Log">Change Log</a>
 </h2>
 <ul>
-<li>11/03/2014. Added "Initallation" and "Change Log" sections to documentation.
+<li>11/03/2014. Added "Installation" and "Change Log" sections to documentation.
 </ul>
 
 <hr>
