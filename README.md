@@ -17,7 +17,7 @@
 <a href="#License">License</a>
 </li>
 <li>
-<a href="#System_Requirements">System Requirement</a>
+<a href="#System_Requirement">System Requirement</a>
 </li>
 <li>
 <a href="#Installation">Installation</a>
@@ -241,7 +241,7 @@ Development environment was:
 
 <hr>
 <h2>
-<a name="User_Documentation">Installation</a>
+<a name="Installation">Installation</a>
 </h2>
 <p>There is a /INSTALL directory in the package. See /INSTALL/INSTALL.txt for instruction.</p>
 <p>Basically, the installation process is:</p>
