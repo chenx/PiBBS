@@ -1,7 +1,7 @@
 
 <h1>PiBBS Documentation</h1>
 
-<div style="font-style: italic;"> Created on: 10/27/2014, Last modified: 10/28/2014 </div>
+<div style="font-style: italic;"> Created on: 10/27/2014, Last modified: 11/3/2014 </div>
 <hr>
 <div id="toc" style="background: #eee;">
 <h3>Table of Contents</h3>
@@ -17,7 +17,10 @@
 <a href="#License">License</a>
 </li>
 <li>
-<a href="#System_Requirements">System Requirements</a>
+<a href="#System_Requirement">System Requirement</a>
+</li>
+<li>
+<a href="#Installation">Installation</a>
 </li>
 <li>
 <a href="#User_Documentation">User Documentation</a>
@@ -185,6 +188,9 @@
 </li>
 </ul>
 <li>
+<a href="#Change_Log">Change Log</a>
+</li>
+<li>
 <a href="#Author">Author</a>
 </li>
 </ul>
@@ -225,7 +231,7 @@ Development first initiated in Summer 2013 as a forum for
 
 <hr>
 <h2>
-<a name="System_Requirements">System Requirements</a>
+<a name="System_Requirement">System Requirement</a>
 </h2>
 <p>
 Development environment was: 
@@ -235,6 +241,39 @@ Development environment was:
 </ul>
 </p>
 <p>Earlier versions of PHP and MySQL may work but were not tested.</p>
+
+<hr>
+<h2>
+<a name="Installation">Installation</a>
+</h2>
+<p>There is a /INSTALL directory in the package. See /INSTALL/INSTALL.txt for instruction.</p>
+<p>Basically, the installation process is:</p>
+<ol>
+<li>Copy package to destination folder under web server document root.
+<li>Create database:
+<ol type="a">
+<li>Modify makedb.sql, provide database name, username and password.
+<li>Enter Mysql console as admin (mysql -u root -p), run "source makedb.sql" to create an empty database,
+<li>In Mysql console, run "source load_data.sql" to create tables and load initial data.
+<li>Modify /conf/db_conf.php, to set host, database name, username and password.
+</ol>
+</li>
+<li>For security purpose, you may want to remove the /INSTALL folder, or move it out of document root.
+</ol>
+
+<p>
+If use <a href="http://www.phpmyadmin.net">phpMyAdmin</a>, then step "2. Create database" above becomes:
+</p>
+
+<ol type="a">
+<li> Create an empty database from phpMyAdmin GUI.
+<li> Run "load_data.sql" in GUI to create tables and load initial data. 
+<li> Modify /conf/db_conf.php to set host, database name, username and password.
+</ol>
+
+<p>
+Note the user documentation (i.e., this documentation) is under /INSTALL/doc. 
+</p>
 
 <hr>
 <h2>
@@ -521,6 +560,7 @@ This can be set up such that it is done by crontab job automatically periodicall
 <p> Under the forum directory there is a /conf folder, which contains these configuration files: </p>
 <ul>
 <li>conf.php </li>
+<li>db_conf.php </li>
 <li>linkedin_conf.php </li>
 <li>upload_conf.php </li>
 </ul>
@@ -960,6 +1000,15 @@ The jiathis.com icon panel is used. The code is in /theme/share.php and included
 <ul>
 <li>Improve on the modular design of the site, to allow easy addition of new modules. </li>
 </ul>
+
+<hr>
+<h2>
+<a name="Change_Log">Change Log</a>
+</h2>
+<ul>
+<li>11/03/2014. Added "Installation" and "Change Log" sections to documentation.
+</ul>
+
 <hr>
 <h2>
 <a name="Author">Author</a>
