@@ -1,7 +1,7 @@
 
 <h1>PiBBS Documentation</h1>
 
-<div style="font-style: italic;"> Created on: 10/27/2014, Last modified: 10/28/2014 </div>
+<div style="font-style: italic;"> Created on: 10/27/2014, Last modified: 11/3/2014 </div>
 <hr>
 <div id="toc" style="background: #eee;">
 <h3>Table of Contents</h3>
@@ -187,6 +187,9 @@
 <a href="#Site-wide_Improvements">Site-wide Improvements</a>
 </li>
 </ul>
+<li>
+<a href="#Change_Log">Change Log</a>
+</li>
 <li>
 <a href="#Author">Author</a>
 </li>
@@ -997,6 +1000,15 @@ The jiathis.com icon panel is used. The code is in /theme/share.php and included
 <ul>
 <li>Improve on the modular design of the site, to allow easy addition of new modules. </li>
 </ul>
+
+<hr>
+<h2>
+<a name="Change_Log">Change Log</a>
+</h2>
+<ul>
+<li>11/03/2014. Added "Initallation" and "Change Log" sections to documentation.
+</ul>
+
 <hr>
 <h2>
 <a name="Author">Author</a>
