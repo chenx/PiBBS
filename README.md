@@ -17,7 +17,10 @@
 <a href="#License">License</a>
 </li>
 <li>
-<a href="#System_Requirements">System Requirements</a>
+<a href="#System_Requirements">System Requirement</a>
+</li>
+<li>
+<a href="#Installation">Installation</a>
 </li>
 <li>
 <a href="#User_Documentation">User Documentation</a>
@@ -225,7 +228,7 @@ Development first initiated in Summer 2013 as a forum for
 
 <hr>
 <h2>
-<a name="System_Requirements">System Requirements</a>
+<a name="System_Requirement">System Requirement</a>
 </h2>
 <p>
 Development environment was: 
@@ -235,6 +238,39 @@ Development environment was:
 </ul>
 </p>
 <p>Earlier versions of PHP and MySQL may work but were not tested.</p>
+
+<hr>
+<h2>
+<a name="User_Documentation">Installation</a>
+</h2>
+<p>There is a /INSTALL directory in the package. See /INSTALL/INSTALL.txt for instruction.</p>
+<p>Basically, the installation process is:</p>
+<ol>
+<li>Copy package to destination folder under web server document root.
+<li>Create database:
+<ol type="a">
+<li>Modify makedb.sql, provide database name, username and password.
+<li>Enter Mysql console as admin (mysql -u root -p), run "source makedb.sql" to create an empty database,
+<li>In Mysql console, run "source load_data.sql" to create tables and load initial data.
+<li>Modify /conf/db_conf.php, to set host, database name, username and password.
+</ol>
+</li>
+<li>For security purpose, you may want to remove the /INSTALL folder, or move it out of document root.
+</ol>
+
+<p>
+If use <a href="http://www.phpmyadmin.net">phpMyAdmin</a>, then step "2. Create database" above becomes:
+</p>
+
+<ol type="a">
+<li> Create an empty database from phpMyAdmin GUI.
+<li> Run "load_data.sql" in GUI to create tables and load initial data. 
+<li> Modify /conf/db_conf.php to set host, database name, username and password.
+</ol>
+
+<p>
+Note the user documentation (i.e., this documentation) is under /INSTALL/doc. 
+</p>
 
 <hr>
 <h2>
@@ -521,6 +557,7 @@ This can be set up such that it is done by crontab job automatically periodicall
 <p> Under the forum directory there is a /conf folder, which contains these configuration files: </p>
 <ul>
 <li>conf.php </li>
+<li>db_conf.php </li>
 <li>linkedin_conf.php </li>
 <li>upload_conf.php </li>
 </ul>
