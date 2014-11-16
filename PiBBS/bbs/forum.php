@@ -220,12 +220,22 @@ function getRank($rank, $top) {
     return $rank;
 }
 
+// Highlight top posts title in red in the forum post list.
+function highlightTopTitle($title, $top) {
+    global $_HIGHLIGHT_TOP_TITLE;
+    if ($_HIGHLIGHT_TOP_TITLE && $top) {
+        $title = "<font color=\"red\">$title</font>";
+    }
+    return $title;
+}
+
 // can use getMBStrMaxSize() function to fit size of title.
 function writeRow($info, $rank) {
     global $url_params;
     $s =  writeCol( getRank($rank, $info['top']) )
         . writeCol( getMsgLabel($info['marked'], $info['digested']) )
-        . writeCol("<a href='view.php?$url_params&t=" . $info['thread_id'] . "'>" . db_htmlEncode($info['title']) . "</a>") 
+        . writeCol("<a href='view.php?$url_params&t=" . $info['thread_id'] . "'>" .
+              highlightTopTitle(db_htmlEncode($info['title']), $info['top']) . "</a>")         
         . writeCol($info['submit_timestamp'], " class='desktop'")
         . writeCol("<a href='user.php?u=$info[user_name]' class='bbs_user'>" . $info['user_name'] . "</a>", " class='desktop'")
         . writeCol($info['click_count'])
