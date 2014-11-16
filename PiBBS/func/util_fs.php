@@ -12,7 +12,7 @@
 //
 function getSubFilesAsArray($dir, $order=0) {
     $a = array();
-    if ($handle = opendir("$dir")) {
+    if (is_dir($dir) && $handle = opendir("$dir")) {
         // This is the correct way to loop over the directory. 
         while (false !== ($entry = readdir($handle))) {
             if ($entry != "." && $entry != ".." && ! is_dir("$dir/$entry")) {
