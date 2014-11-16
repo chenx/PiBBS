@@ -152,6 +152,9 @@ $_BBS_USE_ATTACHMENT = 1;
 // Whether to show image as image in attachment.
 $_BBS_DISP_ATTACHED_IMAGE = 1;
 
+// If true, highlight the tilte of top posts red in color in forum post list.
+$_HIGHLIGHT_TOP_TITLE = 1;
+
 
 /////////////////////////////////////////////
 // Gravatar
