@@ -543,7 +543,7 @@ function homecoxHtmlEncode($s, $div_media_img="div_media_img") {
 
     // For video iframes. This makes good size and aspect ratio. 
     // See: http://fettblog.eu/blog/2013/06/16/preserving-aspect-ratio-for-embedded-iframes/
-    $s = preg_replace("/@\[vframe (.*?)\]/", "<div class=\"aspect-ratio\"><iframe $1></iframe></div>", $s);
+    $s = preg_replace("/@\[video (.*?)\]/", "<div class=\"aspect-ratio\"><iframe $1></iframe></div>", $s);
 
     // For non-video iframes.
     $s = preg_replace("/@\[iframe (.*?)\]/", "<iframe $1></iframe>", $s);
