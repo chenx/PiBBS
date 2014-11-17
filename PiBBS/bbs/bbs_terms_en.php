@@ -119,7 +119,7 @@ Post Help[<span id="bbs_help_mode">+</span>]</a></b></p>
 <br/>@[img src="{image link}" width="400" height="200"]
 <li>To show a video (Youtube, Youku etc.):
 <br/>E.g., the original link is &lt;iframe width="560" height="315" src=".." .. allowfullscreen&gt;&lt;/iframe&gt;
-<br/>Change to: @[vframe width="560" height="315" src=".." .. allowfullscreen]
+<br/>Change to: @[video width="560" height="315" src=".." .. allowfullscreen]
 <li>To display an embedded webpage:
 <br/>E.g., the webpage address is: url
 <br/>Change to: @[iframe width="100%" height="1000" src="url" style="border: 0px;"]
