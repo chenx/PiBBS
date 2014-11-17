@@ -541,9 +541,13 @@ function homecoxHtmlEncode($s, $div_media_img="div_media_img") {
     // Use a imgContainer div, then the max size is always restricted to 100%, or 1000px in this case.
     $s = preg_replace("/@\[img (.*?)\]/", "<div class='$div_media_img'><img $1 class=\"media_img\"></div>", $s);
 
+    // For video iframes. This makes good size and aspect ratio. 
     // See: http://fettblog.eu/blog/2013/06/16/preserving-aspect-ratio-for-embedded-iframes/
-    $s = preg_replace("/@\[iframe (.*?)\]/", "<div class=\"aspect-ratio\"><iframe $1></iframe></div>", $s);
+    $s = preg_replace("/@\[vframe (.*?)\]/", "<div class=\"aspect-ratio\"><iframe $1></iframe></div>", $s);
 
+    // For non-video iframes.
+    $s = preg_replace("/@\[iframe (.*?)\]/", "<iframe $1></iframe>", $s);
+    
     $s = str_replace("@[code]", "<div class=\"code\">", $s);
     $s = str_replace("@[/code]", "</div>", $s);
 
