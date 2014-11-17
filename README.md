@@ -317,8 +317,16 @@ To show a video (Youtube, Youku etc.):
 <br>
 E.g., the original link is <iframe width="560" height="315" src=".." .. allowfullscreen></iframe>
 <br>
-Change to: @[iframe width="560" height="315" src=".." .. allowfullscreen]
+Change to: @[video width="560" height="315" src=".." .. allowfullscreen]
 </li>
+<li>
+To display an embedded webpage:
+<br/>
+E.g., the webpage address is: url
+<br/>
+Change to: @[iframe width="100%" height="1000" src="url" style="border: 0px;"]
+<br/>
+Note: For videos, use @[iframe] instead of @[video] may cause inconsistent formatting on mobile devices.
 <li>
 To show a segment of code:
 <br>
@@ -1006,6 +1014,7 @@ The jiathis.com icon panel is used. The code is in /theme/share.php and included
 <a name="Change_Log">Change Log</a>
 </h2>
 <ul>
+<li>11/16/2014. Added "@[video]" for embedded video, and "@[iframe]" for other embedded webpage.
 <li>11/03/2014. Added "Installation" and "Change Log" sections to documentation.
 </ul>
 
