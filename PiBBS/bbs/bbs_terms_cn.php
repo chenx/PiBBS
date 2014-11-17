@@ -118,7 +118,7 @@ $T_forum_help = <<<EOF
 <br/>@[img src="{image link}" width="400" height="200"]
 <li>显示录像(Youtube, Youku等):
 <br/>例如, 原链接为: &lt;iframe width="560" height="315" src=".." .. allowfullscreen&gt;&lt;/iframe&gt;
-<br/>改为: @[vframe width="560" height="315" src=".." .. allowfullscreen]
+<br/>改为: @[video width="560" height="315" src=".." .. allowfullscreen]
 <li>显示内嵌网页:
 <br/>例如, 网页链接为url
 <br/>改为: @[iframe width="100%" height="1000" src="url" style="border: 0px;"]
