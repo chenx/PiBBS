@@ -315,7 +315,7 @@ You can also specify the display size:
 <li>
 To show a video (Youtube, Youku etc.):
 <br>
-E.g., the original link is <iframe width="560" height="315" src=".." .. allowfullscreen></iframe>
+E.g., the original link is &lt;iframe width="560" height="315" src=".." .. allowfullscreen&gt;&lt;/iframe&gt;
 <br>
 Change to: @[video width="560" height="315" src=".." .. allowfullscreen]
 </li>
