@@ -122,7 +122,7 @@ $T_forum_help = <<<EOF
 <li>显示内嵌网页:
 <br/>例如, 网页链接为url
 <br/>改为: @[iframe width="100%" height="1000" src="url" style="border: 0px;"]
-<br/>注意: 对于录像，用@[iframe]不用@[vframe]可能在手机上显示不美观。
+<br/>注意: 对于录像，用@[iframe]不用@[video]可能在手机上显示不美观。
 <li>显示一段代码: 
 <br/>@[code] {your code} @[/code] 
 <li>显示一段代码于可调节高度的Textarea:
