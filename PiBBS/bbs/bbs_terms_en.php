@@ -123,7 +123,7 @@ Post Help[<span id="bbs_help_mode">+</span>]</a></b></p>
 <li>To display an embedded webpage:
 <br/>E.g., the webpage address is: url
 <br/>Change to: @[iframe width="100%" height="1000" src="url" style="border: 0px;"]
-<br/>Note: For videos, use @[iframe] instead of @[vframe] may cause inconsistent formatting on mobile devices.
+<br/>Note: For videos, use @[iframe] instead of @[video] may cause inconsistent formatting on mobile devices.
 <li>To show a segment of code:
 <br/>@[code] {your code} @[/code]
 <li>To show a segment of code is a textarea with adjustable height:
