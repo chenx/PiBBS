@@ -465,7 +465,7 @@ Links involved are:
 </p>
 
 
-<h3>S.7 configuration file</h3>
+<h3>S.7 Configuration file</h3>
 
 <p>
 Under the forum directory there is a /conf folder, which contains these configuration files:
@@ -530,6 +530,33 @@ This file contains upload parameters:
 <li>Upload file root directory.
 </ul>
 </p>
+
+
+<h3>S.8 Miscellaneous</h3>
+
+<h4>S.8.1 Google analytics</h4>
+
+<p>You can include your analytics code in /js/analytics.php, which is included in theme/footer.php by default.</p>
+
+<p>To enable this, in /conf/conf.php, set $_BBS_INCLUDE_ANALYTICS = 1.</p>
+
+<h4>S.8.2 Social media sharing icons</h4>
+
+<p>The jiathis.com icon panel can be used. </p>
+
+<p>
+To enable this, in /conf/conf.php, set $_BBS_JIA_THIS_POST = 1 or $_BBS_JIA_THIS_THREAD = 1. 
+</p>
+
+<ul>
+<li>
+The first adds a sharing bar to each post. The code is in /bbs/bbs_func.php function getFooter().
+<li>
+The second adds a sharing bar to page right border, the code is in /theme/share.php and included in theme/footer.php by default. 
+<li>
+The second method is preferred since the sharing function shares page url, and there is no need for each post on the
+same page to have a separate sharing bar.
+</ul>
 
 
 <hr>
@@ -779,17 +806,6 @@ as the part of the the storage folder name.
 <li>BBS and I-Mail's upload functions can be used as examples to understand how to implement a new upload function.
 </ul>
 </p>
-
-
-<h3>D.6 Miscellaneous</h3>
-
-<h4>D.6.1 Google analytics</h4>
-
-You can include your analytics code in /js/analytics.php, which is included in theme/footer.php by default.
-
-<h4>D.6.2 Social media sharing icons</h4>
-
-The jiathis.com icon panel is used. The code is in /theme/share.php and included in theme/footer.php by default.
 
 
 
