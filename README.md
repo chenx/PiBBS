@@ -129,6 +129,17 @@
 <a href="#S.7.4_upload_conf.php">S.7.4 upload_conf.php</a>
 </li>
 </ul>
+<li>
+<a href="#S.8_Miscellaneous">S.8 Miscellaneous</a>
+</li>
+<ul>
+<li>
+<a href="#S.8.1_Google_analytics">S.8.1 Google analytics</a>
+</li>
+<li>
+<a href="#S.8.2_Social_media_sharing_icons">S.8.2 Social media sharing icons</a>
+</li>
+</ul>
 </ul>
 <li>
 <a href="#Developer_Documentation">Developer Documentation</a>
@@ -149,17 +160,6 @@
 <li>
 <a href="#D.5_File_Upload">D.5 File Upload</a>
 </li>
-<li>
-<a href="#D.6_Miscellaneous">D.6 Miscellaneous</a>
-</li>
-<ul>
-<li>
-<a href="#D.6.1_Google_analytics">D.6.1 Google analytics</a>
-</li>
-<li>
-<a href="#D.6.2_Social_media_sharing_icons">D.6.2 Social media sharing icons</a>
-</li>
-</ul>
 </ul>
 <li>
 <a href="#To-do_List">To-do List</a>
@@ -624,6 +624,34 @@ This can be set up such that it is done by crontab job automatically periodicall
 <li>Upload file root directory. </li>
 </ul>
 <p></p>
+
+<h3>
+<a name="S.8_Miscellaneous">S.8 Miscellaneous</a>
+</h3>
+<h4>
+<a name="S.8.1_Google_analytics">S.8.1 Google analytics</a>
+</h4>
+<p>You can include your analytics code in /js/analytics.php, which is included in theme/footer.php by default.</p>
+<p>To enable this, in /conf/conf.php, set $_BBS_INCLUDE_ANALYTICS = 1.</p>
+<br/><br/>
+Then in /conf/conf.php, set $_BBS_INCLUDE_ANALYTICS = 1.
+<h4>
+<a name="S.8.2_Social_media_sharing_icons">S.8.2 Social media sharing icons</a>
+</h4>
+<p>The jiathis.com icon panel can be used. </p>
+<p>
+To enable this, in /conf/conf.php, set one of $_BBS_JIA_THIS_POST = 1 or $_BBS_JIA_THIS_THREAD = 1. 
+</p>
+<ul>
+<li>
+The first adds a sharing bar to each post. The code is in /bbs/bbs_func.php function getFooter().
+<li>
+The second adds a sharing bar to page right border, the code is in /theme/share.php and included in theme/footer.php by default. 
+<li>
+The second method is preferred since the sharing function shares page url, and there is no need for each post on the
+same page to have a separate sharing bar.
+</ul>
+
 <hr>
 <h2>
 <a name="Developer_Documentation">Developer Documentation</a>
@@ -934,17 +962,7 @@ d) site.css, site_mobile.css (for entire site, both desktop and mobile versions)
 <li>BBS and I-Mail's upload functions can be used as examples to understand how to implement a new upload function. </li>
 </ul>
 <p></p>
-<h3>
-<a name="D.6_Miscellaneous">D.6 Miscellaneous</a>
-</h3>
-<h4>
-<a name="D.6.1_Google_analytics">D.6.1 Google analytics</a>
-</h4>
-You can include your analytics code in /js/analytics.php, which is included in theme/footer.php by default.
-<h4>
-<a name="D.6.2_Social_media_sharing_icons">D.6.2 Social media sharing icons</a>
-</h4>
-The jiathis.com icon panel is used. The code is in /theme/share.php and included in theme/footer.php by default.
+
 <hr>
 <h2>
 <a name="To-do_List">To-do List</a>
