@@ -113,7 +113,7 @@
 <a href="#S.6_Reports">S.6 Reports</a>
 </li>
 <li>
-<a href="#S.7_configuration_file">S.7 configuration file</a>
+<a href="#S.7_configuration_file">S.7 Configuration file</a>
 </li>
 <ul>
 <li>
@@ -563,7 +563,7 @@ This can be set up such that it is done by crontab job automatically periodicall
 </ul>
 <p></p>
 <h3>
-<a name="S.7_configuration_file">S.7 configuration file</a>
+<a name="S.7_configuration_file">S.7 Configuration file</a>
 </h3>
 <p> Under the forum directory there is a /conf folder, which contains these configuration files: </p>
 <ul>
