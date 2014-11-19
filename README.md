@@ -633,8 +633,6 @@ This can be set up such that it is done by crontab job automatically periodicall
 </h4>
 <p>You can include your analytics code in /js/analytics.php, which is included in theme/footer.php by default.</p>
 <p>To enable this, in /conf/conf.php, set $_BBS_INCLUDE_ANALYTICS = 1.</p>
-<br/><br/>
-Then in /conf/conf.php, set $_BBS_INCLUDE_ANALYTICS = 1.
 <h4>
 <a name="S.8.2_Social_media_sharing_icons">S.8.2 Social media sharing icons</a>
 </h4>
