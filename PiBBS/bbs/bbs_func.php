@@ -399,7 +399,7 @@ EOF;
 }
 
 /**
- * Banner for each forum is stored in folder banner/$forum_id.php
+ * Banner html for each forum is stored in folder banner as $forum_id.php.
  */
 function get_forum_banner($forum_id) {
     $s = "";
