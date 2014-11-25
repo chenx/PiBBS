@@ -393,7 +393,21 @@ EOF;
 EOF;
     }
 
+    $s .= get_forum_banner($forum_id);
+    
     print $s;
+}
+
+/**
+ * Banner for each forum is stored in folder banner/$forum_id.php
+ */
+function get_forum_banner($forum_id) {
+    $s = "";
+    $file = "banner/$forum_id.php";
+    if (file_exists($file)) {
+        $s = file_get_contents($file);
+    }
+    return $s;
 }
 
 function writeLoginLink($back_url) {
