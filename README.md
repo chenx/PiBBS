@@ -1044,6 +1044,7 @@ d) site.css, site_mobile.css (for entire site, both desktop and mobile versions)
 <a name="Change_Log">Change Log</a>
 </h2>
 <ul>
+<li>11/24/2014. Added bbs board banner function.
 <li>11/16/2014. Added "@[video]" for embedded video, and "@[iframe]" for other embedded webpage.
 <li>11/03/2014. Added "Installation" and "Change Log" sections to documentation.
 </ul>
