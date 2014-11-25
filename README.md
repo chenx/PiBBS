@@ -516,7 +516,6 @@ When the registration code feature is enabled, only invited people with a regist
 <p> A new board can be added here. </p>
 <p> A board can have 0, 1 or more than 1 managers. Two places are relevant: table BBS_BoardManager and table column BBS_BoardList.managers. </p>
 <p> In table 'BBS_BoardList', the 'managers' column format is: user_id,user_name,role[|user_id,user_name,role]* </p>
-<h3>
 <h4>
 <a name="S.2.3_Manage_board_banner">S.2.3 Manage board banner</a>
 </h4>
@@ -528,6 +527,7 @@ By default no banner is used. If you want to create a banner for a board, you ca
 the /bbs/banner/ folder, with the forum id as file name, and ".php" as file suffix. With the ".php"
 extension, you could use some dynamic content.
 </p>
+<h3>
 <a name="S.3_IMail_Management">S.3 IMail Management</a>
 </h3>
 <p> Links involved are: </p>
