@@ -4,7 +4,7 @@ include_once("bbs_mgr_func.php");
 
 $thread_id = U_REQUEST_INT('t');
 $_title = "";
-$page_title = "Post";
+//$page_title = "Post"; // obtain page title in bbs_inc.php
 
 db_open();
 incClickCount();
