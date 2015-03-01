@@ -57,7 +57,7 @@ $url_params = get_url_params();
 $thread_id = U_REQUEST_INT('t');
 if ($thread_id != 0 && $forum_tbl != '') {
     $query = "SELECT title FROM $forum_tbl WHERE id = " . db_encode($thread_id); //print $query;
-    $page_title = executeScalar($query) . " - $forum_title";
+    $page_title = executeScalar($query) . " - $forum_title | $_BBS_HEAD_TITLE";
 }
 ?>
 
