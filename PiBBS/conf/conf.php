@@ -108,6 +108,9 @@ $_USE_BBS = 1;
 // Show this at the bottom of a post.
 $_BBS_POST_SRC = "homecox.com";
 
+// Show this as suffix in html header title, in view.php and post.php.
+$_BBS_HEAD_TITLE = "Homecox BBS";
+
 // If 1, then only logged in users can see. 
 // - unlogged in user will be redirected to logout.php, and then homepage.
 //   so the user clicks on a bbs link and sees nothing. This is not very nice UI.
