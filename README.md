@@ -224,7 +224,8 @@
 <p>
 Development first initiated in Summer 2013 as a forum for
 <a href="http://homecox.com">homecox.com</a>
-. It stopped for a while, and was picked up again in Summer 2014.
+. It stopped for a while, was picked up again in Summer 2014 and then deployed at
+<a href="http://careerassist.org/bbs/">careerassist.org/bbs/</a>
 </p>
 <hr>
 <h2>
